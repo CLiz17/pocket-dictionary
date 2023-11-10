@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Endpoints",
-  "version": "0.0.1",
-  "description": "Scape the website and present all endpoints",
+  "name": "Pocket Dictionary",
+  "version": "0.1.0",
+  "description": "A Handy Dictionary that is simply a click away when going through the website or referring information",
   "permissions": ["activeTab"],
   "browser_action": {
     "default_icon": {
@@ -12,5 +12,10 @@
   },
   "icons": {
     "128": "logo.png"
-  }
+  },
+  "background": [
+    {
+      "service_worker": "script.js"
+    }
+  ]
 }
